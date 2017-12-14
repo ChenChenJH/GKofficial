@@ -1,0 +1,27 @@
+#about_middle{
+	width: 800px;
+	border-bottom: 1px dashed #E6E6FA;
+}
+
+#about_middle img{
+	width:800px;
+}
+
+.about_middle_label{
+	font-size: 23px;
+}
+
+#about_body{
+	width: 800px;
+	margin-top: 20px;
+}
+#about_body span{
+	display: block;
+	font-size:18px;
+	padding: 8px;
+	color: #696969;
+	text-indent:2em;
+}
+.body_span{
+	text-align: center;
+}
