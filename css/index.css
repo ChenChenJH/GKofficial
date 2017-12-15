@@ -1,7 +1,7 @@
 
 #div_message{
 	margin-top:10px;
-	width:800px;
+	width:100%;
 }
 
 #div_message div{
@@ -49,7 +49,7 @@
 
 #advisement_photo{
 	margin-top:10px;
-	width:800px;
+	width:100%;
 	height:165px;
 }
 
