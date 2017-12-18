@@ -22,12 +22,12 @@
 		<!--菜单栏-->
 		<div id="nav">
 			<ul>
-				<li class="mymenu" onmouseover="xianshi()" onmouseout="xiaoshi()">
+				<li class="mymenu">
 					<a href="index.html">首页</a>
 				</li>
 				<li class="mymenu">
 					<a href="#">学校概况</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="about-school.html">学校简介</a></li>
 		                    <li><a href="#">现任领导</a></li>
@@ -40,7 +40,7 @@
 	            	</div>
 				</li>
 				<li class="mymenu"><a href="#">教学院系</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="#">计算机学院</a><a href="#"></li>
 		                    <li><a href="#">经管学院</a><a href="#"></li>
@@ -54,7 +54,7 @@
 	            	</div>
 				</li>
 				<li class="mymenu"><a href="#">校园生活</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="station.html">歧关车</a></li>
 		                    <li><a href="#">公交路线</a></li>
@@ -63,7 +63,7 @@
 	            	</div>
 				</li>
 				<li class="mymenu"><a href="#">教学教务</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="#">学籍管理</a></li>
 		                    <li><a href="#">教务管理</a></li>
@@ -73,7 +73,7 @@
 	            	</div>
 				</li>
 				<li class="mymenu"><a href="#">招生就业</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="#">就业信息</a></li>
 		                    <li><a href="#">招生信息</a></li>
@@ -81,7 +81,7 @@
 	            	</div>
 	            </li>
 				<li class="mymenu"><a href="#">信息公开</a>
-					<div id="cd">
+					<div class="cd">
 		                <ul>
 		                    <li><a href="#">学风建设</a></li>
 		                </ul>
@@ -174,11 +174,11 @@
 	$(function(){
 		$('.mymenu').mouseover(function(){
 			$(this).css('background','url(images/forumMenuBg.jpg) repeat-x');
-			$(this).children('#cd').stop().show(300);
+			$(this).children('.cd').stop().show(300);
 		});
 		$('.mymenu').mouseout(function(){
 			$(this).css('background','#6cc');
-			$(this).children('#cd').stop().hide(300);
+			$(this).children('.cd').stop().hide(300);
 		});
 	})
 </script> 

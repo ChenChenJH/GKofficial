@@ -33,7 +33,6 @@ a:hover{
 	line-height: 32px;
 	background-color:#6cc;
 	text-align: center;
-
 }
 
 #nav li{
@@ -49,7 +48,7 @@ a:hover{
 	color:#FFF;
 }
 
-#cd{
+.cd{
 	position: absolute;
 	left: -15px;
 	display: none;
@@ -67,7 +66,7 @@ a:hover{
 	background:#99F;
 }
 
-#cd ul li:hover{
+.cd ul li:hover{
 	background:#9C6;
 }
 
