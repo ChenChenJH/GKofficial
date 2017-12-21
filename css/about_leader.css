@@ -1,0 +1,32 @@
+#about_middle{
+	width: 100%;
+	border-bottom: 1px dashed #E6E6FA;
+}
+
+#about_middle img{
+	width:100%;
+}
+
+.about_middle_label{
+	font-size: 23px;
+}
+#about_body{
+	width:100%;
+	margin-top: 20px;
+}
+
+.body_table{
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.body_table td{
+	width:220px;
+	height: 250px;
+	padding: 0px 40px 2px;
+}
+.body_table img{
+	width: 220px;
+}
+.body_table  p{
+	text-align: center;
+}
