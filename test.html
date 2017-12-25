@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#cjh_nav{
+			border: 1px solid;
+			width: 500px;
+			height: 300px;
+			position: relative;
+			margin:0 auto;
+		}
+		#cjh_nav img{
+			width: 500px;
+			height: 300px;
+		}
+		.cjh_nav_div ol{
+			position: absolute;
+			bottom: 0px;
+			right: 10px;
+		}
+		.menu_num{
+			list-style: none;
+			text-align: center;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #993333;
+			margin-right: 5px;
+			background:#333; 
+			color:#FFF;
+			cursor: pointer;
+		}
+		.select_num{
+			color:#f60;
+			font-weight: bold;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+
+	<div id="cjh_nav">
+		<img id="cjh_nav_img" src="images/index/slider1.jpg">
+			<div class="cjh_nav_div">
+				<ol>
+					<li class="menu_num select_num">1</li>
+					<li class="menu_num">2</li>
+					<li class="menu_num">3</li>
+				</ol>
+			</div>
+	</div>
+
+	<script type="text/javascript">
+		var nav = new Array();
+		nav[0] = "images/index/slider1.jpg";
+		nav[1] = "images/index/slider2.jpg";
+		nav[2] = "images/index/slider3.jpg";
+		var current_num = 0;
+		var timer;
+		function showPic(){
+				current_num = parseInt((current_num+1)%nav.length);
+				$('#cjh_nav_img').attr('src',nav[current_num]);
+				 $('.menu_num').eq(current_num).addClass('select_num').siblings().removeClass('select_num');
+				timer = setTimeout("showPic()",2000);
+			}
+
+		$(function(){
+			$('.menu_num').mouseover(function(){
+				clearTimeout(timer);
+				$(this).addClass('select_num');
+				$(this).siblings().removeClass('select_num');
+				$('#cjh_nav_img').attr('src',nav[$(this).index()]);
+				current_num = $(this).index();
+			}).mouseout(function(){
+				timer = setTimeout("showPic()",2000);
+			});
+			timer = setTimeout("showPic()",2000);
+		});
+	</script>
+</body>
+</html>

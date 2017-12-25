@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#main{
+			border: 1px solid;
+			width: 500px;
+			height: 300px;
+			position: relative;
+		}
+		#main img{
+			width: 500px;
+			height: 300px;
+		}
+		ol{
+			position: absolute;
+			bottom: 0px;
+			height: 25px;
+			right: 10px;
+		}
+		ol li{
+			list-style: none;
+			text-align: center;
+			display: inline-block;
+			width: 27px;
+			height: 27px;
+			margin-right: 5px;
+		}
+		.div_li{
+			width: 20px;
+			height: 20px;
+			border: 1px solid #993333;
+			background:#333; 
+			color:#FFF;
+			cursor: pointer;
+			bottom: 0px;
+			position: absolute;
+		}
+		.select_num_div{
+			width: 25px;
+			height: 25px;
+			color:#f60;
+			font-weight: bold;
+		}
+		.select_num_li{
+			margin-right: 11px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<img src="images/slider1.jpg">
+			<ol>
+				<li class="menu_num"><div class="div_li">1</div></li>
+				<li class="menu_num"><div class="div_li">2</div></li>
+				<li class="menu_num select_num_li"><div class="div_li select_num_div">3</div></li>
+			</ol>
+	</div>
+</body>
+</html>
