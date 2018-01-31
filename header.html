@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广东科学技术职业学院</title>
+	<link href="css/slideshow.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/commons.css">	
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div id="mycontainer">
+		<!--头部 logo-->
+		<div id="logo">
+			<img src="images/index/logo.png">
+			<div id="logo_search">
+				<input type="text" style="width:140px;" placeholder="请输入关键字" />&nbsp;
+				<input type="button" value="搜索" style="color:green;background:#AFEEEE;" />
+			</div>
+		</div>
+		<!--菜单栏-->
+		<div id="nav">
+			<ul>
+				<li class="mymenu">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="mymenu">
+					<a href="about-school.html">学校概况</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="about-school.html">学校简介</a></li>
+		                    <li><a href="about-leader.html">现任领导</a></li>
+		                    <li><a href="about-expert.html">专家教授</a></li>
+		                    <li><a href="#">管理架构</a></li>
+		                    <li><a href="about-school-history.html">办学历史</a></li>
+		                    <li><a href="about-school-view.html">学校风貌</a></li>
+		                    <li><a href="about-school-address.html">地理位置</a></li>
+		                </ul>
+	            	</div>
+				</li>
+				<li class="mymenu"><a href="#">教学院系</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="computer-college.html">计算机学院</a><a href="#"></li>
+		                    <li><a href="#">经管学院</a><a href="#"></li>
+		                    <li><a href="#">人文学院</a><a href="#"></li>
+		                    <li><a href="#">建工学院</a><a href="#"></li>
+		                    <li><a href="#">广州学院</a><a href="#"></li>
+		                    <li><a href="#">艺术学院</a><a href="#"></li>
+	                    	<li><a href="#">财金学院</a><a href="#"></li>
+                    		<li><a href="#">体育学院</a><a href="#"></li>
+		                </ul>
+	            	</div>
+				</li>
+				<li class="mymenu"><a href="#">校园生活</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="station.html">歧关车</a></li>
+		                    <li><a href="#">公交路线</a></li>
+		                    <li><a href="#">年度校历</a></li>
+		                </ul>
+	            	</div>
+				</li>
+				<li class="mymenu"><a href="#">教学教务</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="#">学籍管理</a></li>
+		                    <li><a href="#">教务管理</a></li>
+		                    <li><a href="#">政务管理</a></li>
+		                    <li><a href="#">规章制度</a></li>
+		                </ul>
+	            	</div>
+				</li>
+				<li class="mymenu"><a href="#">招生就业</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="#">就业信息</a></li>
+		                    <li><a href="#">招生信息</a></li>
+		                </ul>
+	            	</div>
+	            </li>
+				<li class="mymenu"><a href="#">信息公开</a>
+					<div class="cd">
+		                <ul>
+		                    <li><a href="#">学风建设</a></li>
+		                </ul>
+	            	</div>
+	            </li>
+				<li class="mymenu"><a href="#">图书馆</a></li>
+			</ul>
+		</div>	
+	</div>
+ 
+<script type="text/javascript">
+	$(function(){
+		$('.mymenu').mouseover(function(){
+			$(this).css('background','url(images/index/forumMenuBg.jpg) repeat-x');
+			$(this).children('.cd').stop().show(300);
+		});
+		$('.mymenu').mouseout(function(){
+			$(this).css('background','#6cc');
+			$(this).children('.cd').stop().hide(300);
+		});
+	})
+</script> 
+</body>
+</html>

@@ -29,7 +29,6 @@
 	position: relative;
 	width:95%;
 	top:-3px;
-
 }
 
 .message_list label{
@@ -39,7 +38,8 @@
 
 .message_list_a{
 	position:absolute;
-	right:5px;top:-15px;
+	right:5px;
+	top:-15px;
 	color:#4169E1;
 }
 
