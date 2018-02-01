@@ -61,7 +61,7 @@ document.writeln("				</li>");
 document.writeln("				<li class=\'mymenu\'><a href=\'#\'>教学教务</a>");
 document.writeln("					<div class=\'cd\'>");
 document.writeln("		                <ul>");
-document.writeln("		                    <li><a href=\'#\'>学籍管理</a></li>");
+document.writeln("		                    <li><a href=\'roll-manager.html\'>学籍管理</a></li>");
 document.writeln("		                    <li><a href=\'#\'>教务管理</a></li>");
 document.writeln("		                    <li><a href=\'#\'>政务管理</a></li>");
 document.writeln("		                    <li><a href=\'#\'>规章制度</a></li>");
