@@ -22,7 +22,7 @@ document.writeln("				<li class=\'mymenu\'>");
 document.writeln("					<a href=\'index.html\'>首页</a>");
 document.writeln("				</li>");
 document.writeln("				<li class=\'mymenu\'>");
-document.writeln("					<a href=\'about-school.html\'>学校概况</a>");
+document.writeln("					<a href=\'#\'>学校概况</a>");
 document.writeln("					<div class=\'cd\'>");
 document.writeln("		                <ul>");
 document.writeln("		                    <li><a href=\'about-school.html\'>学校简介</a></li>");
